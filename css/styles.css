@@ -1,0 +1,99 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.container {
+  display: block;
+  text-align: center;
+  background-color: lightgray;
+  min-height: 100vh;
+}
+
+.container:nth-child(even) {
+  background-color: white;
+}
+
+.logo_container {
+  display: block;
+  margin: 0 auto;
+  padding-top: 4%;
+}
+
+.logo {
+  width: 10vw;
+}
+
+.page_name {
+  display:block;
+  margin-bottom:1em;
+  font-size: 24px;
+  text-align: center;
+}
+
+.img_container {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 2%;
+}
+
+.img-circle {
+  border-radius:50%;
+  width: 25%;
+}
+
+.description {
+  display: block;
+  padding-bottom: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 14px;
+}
+
+.projects_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.project_container {
+  margin: 1em;
+  width: 200px;
+  height: 150px;
+  border: black solid 1px;
+  background-color: gray 50%;
+  color: black 80%;
+}
+
+.project_container:hover {
+  background-color: lightblue;
+}
+
+.project_title {
+  margin-top: 10px;
+}
+
+.project_description {
+  text-align: left;
+  font-size: 14px;
+  margin: 10px;
+}
+
+.view_project {
+  font-size: 10px;
+}
+
+.view_project::before {
+    content: "\2002";
+}
+
+@media screen and (min-width: 480px) {
+  .projects_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
