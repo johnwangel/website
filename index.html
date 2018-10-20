@@ -3,60 +3,491 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous">
+  </script>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
   <title>John Atkins</title>
 </head>
-<body>
-  <div class="container">
+<body data-spy="scroll" data-target="#navbar-example">
+
+  <div id="top" class="jumbotron" data-src="/view/images/window_rain_animation.gif" data-position="bottom right"></div>
+
+  <div class="container_first">
     <div class="logo_container"><img class="logo" src="img/logo.png"></div>
-    <div class="page_name">John W. Atkins</div>
+    <div class="page_name">John Atkins</div>
     <div class="img_container"><img class="img-circle" src="img/jwa.jpg"></div>
-    <div class="description">Web Developer * Editor * Writer * Publishing Expert</div>
+    <div class="description">Web Developer &ensp; &#x2726; &ensp; Editor
+      <br/>Writer &ensp; &#x2726; &ensp; Publishing Expert
+    </div>
+    <div class="scroll-down">
+      <div id="arrow">&#8681;</div>
+    </div>
   </div>
+
   <div class="container">
-    <div class="page_name">Projects</div>
-    <div class="projects_container">
-      <div class="project_container">
-        <div class="project_title">InvisiArt</div>
-        <div class="project_description">Allows user to draw a simple picture that projects onto a community art wall using AR (Augmented Reality). <span class="view_project"><a href="http://invisiart.com">view</a></span></div>
-      </div>
-      <div class="project_container">
-        <div class="project_title">Wordsmith</div>
-        <div class="project_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis nunc.<span class="view_project"><a href="">view</a></span></div>
-      </div>
-      <div class="project_container">
-        <div class="project_title">Kanban Board</div>
-        <div class="project_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis nunc.<span class="view_project"><a href="">view</a></span></div>
-      </div>
-      <div class="project_container">
-        <div class="project_title">Sentenced</div>
-        <div class="project_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis nunc.<span class="view_project"><a href="">view</a></span></div>
-      </div>
-      <div class="project_container">
-        <div class="project_title">HCML</div>
-        <div class="project_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis nunc.<span class="view_project"><a href="">view</a></span></div>
-      </div>
-      <div class="project_container">
-        <div class="project_title">HCML</div>
-        <div class="project_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis nunc.<span class="view_project"><a href="">view</a></span></div>
+    <div class="page_name">Portfolio</div>
+
+      <div class="portfolio_container">
+        <div class="caption">Permissions system for sharing writing</div>
+        <div class="video_container">
+          <div class="prev">Prev</div>
+          <video controls>
+            <source src="img/permissions.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="next">Next</div>
+        </div>
+
+
       </div>
     </div>
   </div>
-    <div class="container">
-    <div class="page_name">Education</div>
-  </div>
-  </div>
-  <div class="container">
+
+      <div class="container">
     <div class="page_name">Experience</div>
-  </div>
-  <div class="container">
-    <div class="page_name">Technologies</div>
-  </div>
-  </div>
-    <div class="container">
-    <div class="page_name">Contact</div>
+
+      <div class="data_container">
+
+        <div class="entry">
+
+          <div class="location">
+            <div class="loc_entry">
+              <div class="loc_role">Web Developer</div>
+              <div class="loc_name"><a href="https://jambios.com">Jambios</a></div>
+              <div class="loc_loc">Honolulu, HI (remote)</div>
+              <div class="loc_date">November 2017&ndash;present</div>
+            </div>
+          </div>
+
+          <div class="descr">
+            <ul>
+              <li>
+                Full Stack web developer, creating startup social media website from ground-up: jambios.com
+              </li>
+              <li>
+                Developed UI components based on static designs and Adobe XD prototypes
+                <ul>
+                  <li>HTML5 and CSS3 development, using JavaScript and JQuery to handle interface and backend calls</li>
+                  <li>Used SASS with Gulp to develop responsive interface for multi-platform usability from desktop to mobile</li>
+                </ul>
+              </li>
+              <li>
+                Developed interactions with RESTful APIs for e-commerce features (credit card services; transmitting orders; real-time status updates)
+              </li>
+              <li>
+                Developed MySQL database and API interaction, with focus on clarity, precision, and metrics that detail user behavior
+              </li>
+              <li>
+                Managed code using GitHub repository
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="entry">
+
+          <div class="location">
+
+            <div class="loc_entry">
+              <div class="loc_role">Content Engineer</div>
+              <div class="loc_name">HarperCollins Publishers</div>
+              <div class="loc_loc">New York, NY</div>
+              <div class="loc_date">July 2014&ndash;April 2017</div>
+            </div>
+
+            <div class="loc_entry">
+                <div class="loc_role">Production Technology Manager</div>
+                <div class="loc_name">John Wiley &amp; Sons</div>
+                <div class="loc_loc">Hoboken, NJ</div>
+                <div class="loc_date">July 2002&ndash;June 2014</div>
+            </div>
+
+          </div>
+          <div class="descr">
+            <div class="heading2">Content Architecture</div>
+            <ul>
+              <li>
+                Reinvented corporate content strategy for two major NYC-based publishers by automating content conversion of over 900 publications annually into XML to enable global access in Content Management System
+              </li>
+              <li>
+                Developed Word-based authoring template to standardize manuscript content and facilitate automated generation of publication formats (print, electronic, web)
+              </li>
+              <li>
+                Streamlined content conversion by utilizing XML and XSLT to transform content from Word into other structured formats (DITA, EPUB, ICML, HTML), eliminating need for outside vendors to perform conversions
+              </li>
+              <li>
+                Created full suite of efficiency macros using MS Word and VBA to assist in converting varied author-generated content into standard structured content, improving quality assurance and reducing dependence on freelance copyeditors and proofreaders
+              </li>
+            </ul>
+            <div class="heading2">Content Management</div>
+            <ul>
+              <li>
+                Represented business in development of Content Management Systems (CMS) for two major NYC-based publishing companies
+              </li>
+              <li>
+                Acted as liaison between business and developers, helping to design user interaction, translate requirements to technical specifications, and provide documentation and training for users
+              </li>
+              <li>
+                Designed content models in XML for efficiently storing and reusing structured content
+              </li>
+            </ul>
+          </div>
+         </div>
+
+        <div class="entry">
+
+          <div class="location">
+            <div class="loc_entry">
+                <div class="loc_role">Production Editor</div>
+                <div class="loc_name">John Wiley &amp; Sons</div>
+                <div class="loc_loc">Hoboken, NJ</div>
+                <div class="loc_date">2000&ndash;2002</div>
+            </div>
+
+            <div class="loc_entry">
+                <div class="loc_role">Managing Editor</div>
+                <div class="loc_name">HarperCollins Publishers</div>
+                <div class="loc_loc">New York, NY</div>
+                <div class="loc_date">1996&ndash;2000</div>
+            </div>
+
+            <div class="loc_entry">
+                <div class="loc_role">Editor</div>
+                <div class="loc_name">Chadwyck-Healey, Inc.</div>
+                <div class="loc_loc">Alexandria, Va.</div>
+                <div class="loc_date">1992&ndash;1995</div>
+            </div>
+          </div>
+          <div class="descr">
+                <ul>
+                  <li>
+                    Managed publications from delivery of author manuscript to handover to printer
+                  </li>
+                  <li>
+                    Oversaw quality assurance: copyediting, proofreading, indexing, page layout, adherence to design specifications
+                  </li>
+                  <li>
+                    Managed tight publishing schedules to ensure all target dates were met
+                  </li>
+                </ul>
+          </div>
+        </div>
+
+        <div class="entry">
+
+          <div class="location">
+            <div class="loc_role">Awards and Achievements</div>
+          </div>
+          <div class="descr">
+            <ul>
+              <li>Recipient of two employee innovation awards for work with Content Management Systems and manuscript templates</li>
+              <li>Panelist at several publishing technology conferences, speaking to integration of XML into corporate publishing strategies</li>
+            </ul>
+          </div>
+        </div>
+      </div>
   </div>
 
+
+
+  <div class="container">
+    <div class="page_name">Education</div>
+
+      <div class="data_container">
+
+
+        <div class="entry">
+          <div class="location">
+            <div class="loc_entry">
+              <div class="loc_role">DevLeague</div>
+              <div class="loc_loc">Honolulu, Hi.</div>
+            </div>
+          </div>
+          <div class="descr">
+            <p>Full-stack web development boot camp, utilizing:</p>
+            <ul>
+              <li>
+                JavaScript
+              </li>
+              <li>
+                NodeJS
+              </li>
+              <li>
+                PostgreSQL
+              </li>
+              <li>
+                MongoDB
+              </li>
+            </ul>
+            <p>Graduated: 2017</p>
+          </div>
+         </div>
+
+
+        <div class="entry">
+          <div class="location">
+            <div class="loc_entry">
+              <div class="loc_role">George Mason University</div>
+              <div class="loc_loc">Fairfax, Va.</div>
+            </div>
+          </div>
+          <div class="descr">
+            <p>MFA Creative Writing</p>
+            <p>GPA: 3.9</p>
+            <p>Graduated: 1996</p>
+          </div>
+         </div>
+
+
+        <div class="entry">
+          <div class="location">
+            <div class="loc_entry">
+              <div class="loc_role">Louisiana State University</div>
+              <div class="loc_loc">Baton Rouge, La.</div>
+
+            </div>
+          </div>
+          <div class="descr">
+            <p>BA Creative Writing</p>
+            <p>GPA: 3.7</p>
+            <p>Graduated: 1991</p>
+          </div>
+         </div>
+
+        <div class="entry">
+          <div class="location">
+            <div class="loc_entry">
+              <div class="loc_role">BMI Musical Theatre Workshop</div>
+              <div class="loc_loc">New York, NY</div>
+            </div>
+          </div>
+          <div class="descr">
+            <p>Lyricist in the prestigious musical theatre writers' workshop.</p>
+            <p>2001&ndash;2006</p>
+          </div>
+         </div>
+
+
+
+        <div class="entry">
+          <div class="location">
+            <div class="loc_entry">
+              <div class="loc_role">Honors</div>
+            </div>
+          </div>
+          <div class="descr">
+            <p>Graduated Cum Laude</p>
+            <p>Member Phi Beta Kappa honor society</p>
+          </div>
+         </div>
+    </div>
+  </div>
+
+
+
+
+
+<!--   <div class="container">
+    <div class="page_name">Projects</div>
+    <div class="projects_container">
+
+      <div class="project_container">
+        <figure class="effect">
+          <img src="img/invisiart.jpg" alt="Invisiart" />
+          <figcaption>
+            <h3>Invisiart</h3>
+            <p>Allows user to draw a simple picture that projects onto a community art wall using AR (Augmented Reality).&emsp;<a href="https://invisiart.com" target="_blank">View more</a></p>
+            <p><strong>Stack:&emsp;</strong>MongoDB, Express, AngularJS, NodeJS, Three.js</p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="project_container">
+        <figure class="effect">
+          <img src="img/wordsmith.jpg" alt="Invisiart" />
+          <figcaption>
+            <h3>Wordsmith</h3>
+            <p>Web app demonstrating a message board, allowing users to create new topics and comment on existing topics.&emsp;<a href="https://github.com/johnwangel/Wordsmith" target="_blank">View more</a></p>
+            <p><strong>Stack:&emsp;</strong>PostgreSQL, Express, AngularJS, NodeJS</p>
+          </figcaption>
+        </figure>
+      </div>
+
+
+      <div class="project_container">
+        <figure class="effect">
+          <img src="img/kanban.jpg" alt="Invisiart" />
+          <figcaption>
+            <h3>KanBan Board</h3>
+            <p>Web app demonstrating a basic Kanban board.&emsp;<a href="https://github.com/johnwangel/react-kanban/tree/dev" target="_blank">View more</a></p>
+            <p><strong>Stack:&emsp;</strong>PostgreSQL, Express, React, Redux, NodeJS</p>
+          </figcaption>
+        </figure>
+      </div>
+-->
+
+<!--
+      <div class="project_container">
+        <figure class="effect">
+          <img src="img/kanban.jpg" alt="Kanban" />
+          <figcaption>
+            <h3>KanBan Board</h3>
+            <p>Allows user to draw a simple picture that projects onto a community art wall using AR (Augmented Reality). <a href="https://wordsmith.com" target="_blank">View more</a></p>
+            <p><strong>Stack:&emsp;</strong>PosgreSQL, Express, React, Redux, NodeJS</p>
+          </figcaption>
+        </figure>
+      </div> -->
+
+
+<!---     <div class="project_container">
+        <figure class="effect">
+          <img src="img/sentenced.jpg" alt="Sentenced" />
+          <figcaption>
+            <h3>Sentenced</h3>
+            <p>Mobile madlib game in which players use grammar rules to generate sentences. (In progress)&emsp;<a href="https://github.com/johnwangel/sentenced" target="_blank">View more</a></p>
+            <p><strong>Stack:&emsp;</strong>PostgreSQL, Express, React-Native, Redux, NodeJS</p>
+          </figcaption>
+        </figure>
+      </div>
+
+
+      <div class="project_container">
+        <figure class="effect">
+          <img src="img/hcml.jpg" alt="HCML" />
+          <figcaption>
+            <h3>HCML</h3>
+            <p>Microsoft Word add-in created for HarperCollins publishers to structure manuscripts for digital processing. <a href="https://github.com/johnwangel/HCML" target="_blank">View more</a></p>
+            <p><strong>Stack:&emsp;</strong>Word, VBA</p>
+          </figcaption>
+        </figure>
+      </div>
+
+
+    </div>
+
+  </div> -->
+
+
+
+
+
+  <div class="container">
+    <div class="page_name">Technologies</div>
+    <div class="tech_container">
+        <div class="tech_entry">
+           <div class="tech_heading2">Programming</div>
+              <ul>
+                <li><div class='tech'>JavaScript</div><div class='meter'><div class='rate _90'></div></div></li>
+                <li><div class='tech'>JQuery</div><div class='meter'><div class='rate _90'></div></div></li>
+                <li><div class='tech'>React</div><div class='meter'><div class='rate _70'></div></div></li>
+                <li><div class='tech'>React-Native</div><div class='meter'><div class='rate _60'></div></div></li>
+                <li><div class='tech'>AngularJS</div><div class='meter'><div class='rate _70'></div></div></li>
+                <li><div class='tech'>Express</div><div class='meter'><div class='rate _90'></div></div></li>
+                <li><div class='tech'>ColdFusion</div><div class='meter'><div class='rate _95'></div></div></li>
+                <li><div class='tech'>MySQL</div><div class='meter'><div class='rate _90'></div></div></li>
+                <li><div class='tech'>MongoDB</div><div class='meter'><div class='rate _80'></div></div></li>
+                <li><div class='tech'>PostgreSQL</div><div class='meter'><div class='rate _80'></div></div></li>
+                <li><div class='tech'>VBA</div><div class='meter'><div class='rate'></div></div></li>
+                <li><div class='tech'>XML</div><div class='meter'><div class='rate _90'></div></div></li>
+                <li><div class='tech'>XSLT</div><div class='meter'><div class='rate _80'></div></div></li>
+                <li><div class='tech'>HTML</div><div class='meter'><div class='rate'></div></div></li>
+                <li><div class='tech'>CSS</div><div class='meter'><div class='rate _80'></div></div></li>
+                <li><div class='tech'>SASS</div><div class='meter'><div class='rate _50'></div></div></li>
+                <li><div class='tech'>Perl</div><div class='meter'><div class='rate _70'></div></div></li>
+                <li><div class='tech'>Java</div><div class='meter'><div class='rate _30'></div></div></li>
+                <li><div class='tech'>Threejs</div><div class='meter'><div class='rate _30'></div></div></li>
+                <li><div class='tech'>Swift</div><div class='meter'><div class='rate _30'></div></div></li>
+                <li><div class='tech'>Objective-C</div><div class='meter'><div class='rate _20'></div></div></li>
+            </ul>
+        </div>
+        <div class="tech_entry">
+          <div class="tech_heading2">Software</div>
+          <ul>
+            <li><div class='tech'>Windows OS</div><div class='meter'><div class='rate _80'></div></div></li>
+            <li><div class='tech'>Mac OS</div><div class='meter'><div class='rate _80'></div></div></li>
+            <li><div class='tech'>Microsoft Word</div><div class='meter'><div class='rate' /></div></li>
+            <li><div class='tech'>Microsoft Excel</div><div class='meter'><div class='rate _60'></div></div></li>
+            <li><div class='tech'>Microsoft PowerPoint</div><div class='meter'><div class='rate _60'></div></div></li>
+            <li><div class='tech'>Git</div><div class='meter'><div class='rate _90'></div></div></li>
+            <li><div class='tech'>JIRA</div><div class='meter'><div class='rate _90'></div></div></li>
+            <li><div class='tech'>Confluence</div><div class='meter'><div class='rate _80'></div></div></li>
+            <li><div class='tech'>Adobe InDesign</div><div class='meter'><div class='rate _70'/></div></li>
+            <li><div class='tech'>Adobe Photoshop</div><div class='meter'><div class='rate _80'></div></div></li>
+            <li><div class='tech'>Adobe Acrobat Pro</div><div class='meter'><div class='rate'></div></div></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+    <div class="container_last">
+    <div class="page_name">Contact</div>
+    <p>Linked In:&emsp;<a href="https://www.linkedin.com/in/john-atkins-4215745/">john-atkins-4215745</a></p>
+    <p>Email:&emsp;<a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">johnatkins1999@yahoo.com</a></p>
+  </div>
+
+  <script>
+
+    $('figure.effect').on("touchstart", function (e) {
+        "use strict";
+        var fig = $(this);
+        if (fig.hasClass('hover')) {
+            return true;
+        } else {
+            div.addClass("hover");
+            $('figure.effect').not(this).removeClass("hover");
+            e.preventDefault();
+            return false;
+        }
+    });
+
+  </script>
 </body>
 </html>
+
+<script>
+  var videos = [
+    {
+      source: "img/permissions.mp4",
+      caption: "Permissions system for sharing writing",
+    },
+    {
+      source: "img/lightbox.mp4",
+      caption: "Light box to click through images",
+    },
+    {
+      source: "img/search.mp4",
+      caption: "Public Bookshelf with Search feature",
+    },
+    {
+      source: "img/shipping.mp4",
+      caption: "Shipping calculator using third-party API",
+    }
+  ];
+
+  const container = $('.portfolio_container');
+  const video = $(container).find('video');
+  const source = $(container).find('source');
+  const caption= (container).find('.caption');
+
+  $('.prev').click(function(){
+    const index = videos.findIndex(v => v.source === $(source).attr('src') );
+    var idx = index -1;
+    if (idx < 0) idx=videos.length -1;
+    $(source).attr('src', videos[idx].source);
+    $(caption).html(videos[idx].caption);
+    $(video)[0].load();
+  });
+  $('.next').click(function(){
+    const index = videos.findIndex(v => v.source === $(source).attr('src') );
+    var idx = index +1;
+    if (idx > videos.length -1) idx=0;
+    $(source).attr('src', videos[idx].source);
+    $(caption).html(videos[idx].caption);
+    $(video)[0].load();
+  });
+
+</script>
