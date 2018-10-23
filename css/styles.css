@@ -140,13 +140,28 @@ a { color: inherit; }
 .prev, .next {
   cursor: pointer;
   text-decoration: underline;
+}
 
+.prev:hover, .next:hover {
+  color: grey;
 }
 
 .portfolio_container video {
   width: 60%;
   border: 2px solid gray;
   margin: 0 20px;
+}
+
+.portfolio_container .number {
+  display: inline-block;
+  color: white;
+  background-color: #729de2;
+  margin-right: 15px;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  padding: 4px;;
+  text-align: center;
 }
 
 .portfolio_container .caption {
